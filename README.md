@@ -47,6 +47,9 @@ $ scip-python index . --project-name=$MY_PROJECT --project-namespace=implicit.na
 
 Now all symbols will have `implicit.namespace` prepended to their symbol, so that you can use it for cross repository navigation, even if the directory structure in your current project does not explicitly show `implicit/namespace/myproject/__init__.py`.
 
+## Local (Development) Usage
+First `cd packages/pyright-scip`; then run `npm run build; npx scip-python index --cwd <project_dir>`.
+
 ## Environment
 
 The environment file format is a JSON list of `PythonPackage`s. The `PythonPackage` has the following form:
